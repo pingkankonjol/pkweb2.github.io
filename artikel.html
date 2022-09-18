@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KKN | Article</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="jquery/jquery-3.6.1.min.js"></script>
+    <script src="jquery/side.js"></script>
+    <script type="text/javascript" src="jquery/canvas.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#ulmenu20").hide();
+  $("#pmenu20").click(function (e) {
+    e.preventDefault();
+    $("#ulmenu20").toggle(500);
+  });
+
+  $("#ulmenu21").hide();
+  $("#pmenu21").click(function (e) {
+    e.preventDefault();
+    $("#ulmenu21").toggle(500);
+  });
+
+  $("#ulmenu22").hide();
+  $("#pmenu22").click(function (e) {
+    e.preventDefault();
+    $("#ulmenu22").toggle(500);
+  });
+      })
+    </script>
+    <style type="text/css">
+      ul, li {
+        padding: 1em;
+        background-color: #222;
+        border-radius: 5px;
+      }
+      ul, li, a{
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+
+      }
+
+      @media screen and (min-width:  500px) {
+        .myCanvas{
+          display: none;
+        }
+      }
+
+      
+
+      @media screen and (min-width: 768px) {
+        #hilang{
+          display: block;
+        }
+        
+      }
+
+      @media screen and (max-width: 600px) {
+        #hilang{
+          display: none;
+        }
+        .myCanvas{
+          display: block;
+        }
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+  <!-- Navbar -->
+  <nav class="sb-topnav navbar navbar-expand navbar-light bg-light shadow fixed-top">
+    <div class="container">
+      <img width="45" class="rounded-circle" src="profile/pingkan.jpg">
+      <a class="navbar-brand ps-3" href="utama.php">Pingkan</a>
+      <a class="navbar-brand ps-3 ms-auto" href="logout.php">logout</a>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+      
+
+  <section>
+    <!-- container -->
+    <div class="container-fluid">
+      <!-- row pertama -->
+      <div class="row px-4">
+
+
+
+
+        <!-- AWAL OFFCANVAS -->
+        <div class="myCanvas">
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Menu</a>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Catagory</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="menu20">
+                <p id="pmenu20" style="cursor: pointer;" class="lead text-bg-dark p-2 rounded">Menu</p>
+                <ul id="ulmenu20">
+                  <li><a href="utama.html">Home</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
+              </div>
+              <div class="menu21">
+                <p id="pmenu21" style="cursor: pointer;" class="lead text-bg-dark p-2 rounded">Artikel</p>
+                <ul id="ulmenu21">
+                  <li><a href="artikel.html">Artikel</a></li>
+                </ul>
+              </div>
+              <div  class="menu22">
+                <p id="pmenu22" style="cursor: pointer;" class="lead text-bg-dark p-2 rounded">Tutorial</p>
+                <ul id="ulmenu22">
+                  <li><a href="">Link 1</a></li>
+                  <li><a href="">Link 2</a></li>
+                  <li><a href="">Link 3</a></li>
+                  <li><a href="">Link 4</a></li>
+                  <li><a href="">Link 5</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- AKHIR OFFCANVAS -->
+
+
+
+
+
+
+
+        <!-- kolom 1 -->
+        <div id="hilang" class="col-md-4 shadow p-5" style="height: 25%;">
+          <h5 class="mb-4">Katagori</h5>
+          <div class="menu14">
+            <p id="pmenu14" style="cursor: pointer;" class="lead text-bg-dark p-2 rounded">Menu</p>
+            <ul id="ulmenu14">
+              <li><a href="utama.html">Home</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="menu15">
+            <p id="pmenu15" style="cursor: pointer;" class="lead text-bg-dark p-2 rounded">Artikel</p>
+            <ul id="ulmenu15">
+              <li><a href="artikel.html">Artikel</a></li>
+            </ul>
+          </div>
+          <div class="menu16">
+            <p id="pmenu16" style="cursor: pointer;" class="lead text-bg-dark p-2 rounded">Tutorial</p>
+            <ul id="ulmenu16">
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="">Link 3</a></li>
+              <li><a href="">Link 4</a></li>
+              <li><a href="">Link 5</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- akhir kolom 1 -->
+        <!-- kolom 2 -->
+        <div class="col-md-8 pt-5">
+          <div class="row">
+            <div class="col">
+              <h2>Article</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+            <!-- BERITA 1 -->
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7iy5wBDX6M_Tny-C_p99BTwuayRlli-jk4B4oFLHVjV-h9wF80H4rEeVov5Ha717TtpSkiMAuxVguRI7RpT4bb22y__D3gKoFJhRo2X3zC71CXcl-aEFf3PbVX9jmDCEuS8uArFYAY0DnS_E9DMwI70B4xxbJM1SajnlVV-8Bgh11p8OwQ5qUUN2p3A/w640-h360/Contoh%20Teks%20Amanat%20Pembina%20Upacara%20Setiap%20Senin%20Tema%20Semangat%20Belajar%20Sebagai%20Kunci%20Kesuksesan%205-7%20Menit%20Saja.jpg">
+              <h3><a href="https://www.blogpendidikan.net/2022/09/contoh-teks-amanat-pembina-upacara.html" target="_blank">Contoh Teks Amanat Pembina Upacara Setiap Senin Tema Semangat Belajar Sebagai Kunci Kesuksesan 5-7 Menit Saja</a></h3>
+
+            <!-- AKHIR BERITA 1-->
+            </div>
+            <div class="col-md-6">
+              <!-- BERITA 2 -->
+                
+              <!-- AKHIR BERITA 2-->
+            </div>
+            <div class="col-md-6">
+              <!-- BERITA 3 -->
+                
+              <!-- AKHIR BERITA 3-->
+            </div>
+            <div class="col-md-6">
+              <!-- BERITA 4 -->
+                
+              <!-- AKHIR BERITA 4-->
+            </div>
+          </div>
+        </div>
+        <!-- akhir kolom 2 -->
+      </div>
+      <!-- akhir row pertama -->
+    </div>
+    <!-- akhir container -->
+  </section>
+  
+ 
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
